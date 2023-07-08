@@ -190,3 +190,10 @@ main {
     margin: 20px 0px;
   text-align: center;
 }
+footer{
+    margin-top: 50px;
+    display: flex;
+    background: #FFF8F3;
+    padding: 130px 200px;
+  
+}
