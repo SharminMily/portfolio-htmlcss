@@ -1,4 +1,6 @@
 body {
+    margin: 0%;
+    padding: 0%;
     font-family: 'Lexend', sans-serif;
 }
 
@@ -134,6 +136,7 @@ main {
 }
 
 .skills-container {
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -161,6 +164,7 @@ main {
 }
 
 .resume-container {
+   
     display: flex;
     gap: 50px;
 }
@@ -193,7 +197,25 @@ main {
 footer{
     margin-top: 50px;
     display: flex;
+    gap: 100px;
     background: #FFF8F3;
     padding: 130px 200px;
   
 }
+.footer-column{
+    width: 50%;
+}
+.social-links{
+    margin-right: 25px;
+}
+.contact input[type="text"], .contact [type="email"], textarea{
+    display: block;
+    margin-bottom: 25px;
+    padding: 18px 35px;
+    color: #757575;   
+    border-radius: 5px;
+    background: #FFF;
+    border: 0;
+    width: 100%;
+}
+.contact input
