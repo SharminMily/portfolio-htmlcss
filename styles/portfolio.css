@@ -65,7 +65,7 @@ nav a {
 .header {
     background-color: #FFF8F3;
     background-image: url('../images/header_bg.png'), url('../images/developer.png');
-   
+
     background-repeat: no-repeat;
     background-position: bottom right, top left;
     background-size: 600px, 80px;
@@ -135,7 +135,7 @@ main {
     padding: 30px 150px;
 }
 
-.skills-container {    
+.skills-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -160,101 +160,199 @@ main {
 }
 
 .resume-container {
-   /* width: 100px;    */
+    /* width: 100px;    */
     display: flex;
     gap: 50px;
 }
 
 .resume-item-title {
-    color:  #474747;   
-    font-size: 25px;    
+    color: #474747;
+    font-size: 25px;
     font-weight: 700;
     margin-bottom: 10px;
 }
-.resume-item-institute{
-  margin-bottom: 20px;
-  margin-top: 0px;
+
+.resume-item-institute {
+    margin-bottom: 20px;
+    margin-top: 0px;
 }
+
 .resume-item-institute,
 .resume-item-description {
     color: #757575;
 }
-.resume-container hr{
+
+.resume-container hr {
     /* margin: 35px; */
     width: 550px;
     height: 1px;
-    
+
 }
-.download-cv{
+
+.download-cv {
     margin: 20px 0px;
-  text-align: center;
+    text-align: center;
 }
-footer{
+
+footer {
     margin-top: 50px;
     display: flex;
     gap: 100px;
     background: #FFF8F3;
     padding: 130px 200px;
-  
+
 }
-.footer-column{
+
+.footer-column {
     width: 50%;
 }
-.social-links{
+
+.social-links {
     margin-right: 25px;
 }
-.contact input[type="text"], .contact [type="email"], textarea{
+
+.contact input[type="text"],
+.contact [type="email"],
+textarea {
     display: block;
     margin-bottom: 25px;
     padding: 18px 35px;
-    color: #757575;   
+    color: #757575;
     border-radius: 5px;
     background: #FFF;
     border: 0;
     width: 100%;
 }
- /* responsive style */
- /* mobile devices */
- @media screen and (max-width: 576px){
-    .skills-container {    
-       flex-direction: column;      
+
+/* responsive style */
+/* mobile devices */
+@media screen and (max-width: 576px) {
+    .header {
+        background-image: none;
     }
-    .skill {     
-        text-align: center;        
-    }        
-    .resume-container {        
-         flex-direction: column;
-         align-items: center;
-         /* text-align: center; */        
-     }
-     .resume-column-title{
+    nav,
+    .banner,
+    .skills-container,
+    .resume-container,
+    .about-info-container {
+        flex-direction: column;
+    }
+
+    .banner .profile-pic {
+        width: 100%;
+    }
+    .btn-primary{
+        margin-bottom: 15px;
+    }
+
+    .skill {
         text-align: center;
-     }
-     .resume-item-title {      
+    }
+
+    .resume-column-title {
         text-align: center;
     }
-    .resume-item-institute{      
-      text-align: center;
+
+    .resume-item-title {
+        text-align: center;
     }
+
+    .resume-item-institute {
+        text-align: center;
+    }
+
     .resume-item-institute,
-    .resume-item-description {      
+    .resume-item-description {
         text-align: center;
     }
-    .resume-container hr{       
+
+    .resume-container hr {
         width: 500px;
-        height: 1px;       
+        height: 1px;
     }
-    .download-cv{
+
+    .download-cv {
         margin: 20px 0px;
-      text-align: center;
+        text-align: center;
     }
-     #what-i-do-des{
+
+    .banner, #what-i-do-des {
         padding: 20px;
-     }
-    
- }
- @media screen and (min-width: 576px) and (max-width: 960px){
-    .skills-container, .resume-container{    
-        flex-direction: column;      
-     }
- }
+    }
+
+    footer,
+    .about {
+        padding: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-column {
+        width: 100%;
+    }
+
+    .social-links {
+        text-align: center;
+    }
+
+    .contact input[type="text"],
+    .contact [type="email"],
+    textarea {
+        width: 80%;
+    }
+
+}
+
+
+@media screen and (min-width: 576px) and (max-width: 960px) {
+     
+    .btn-primary{
+        margin-bottom: 15px;
+    }
+    .skills-container,
+    .resume-container {
+        flex-direction: column;
+    }
+
+    .resume-column-title {
+        text-align: center;
+    }
+
+    .resume-item-title {
+        text-align: center;
+    }
+
+    .resume-item-institute {
+        text-align: center;
+    }
+
+    .resume-item-institute,
+    .resume-item-description {
+        text-align: center;
+    }
+
+    .resume-container hr {
+        width: 700px;
+        height: 1px;
+    }
+
+    .download-cv {
+        margin: 20px 0px;
+        text-align: center;
+    }
+
+    #what-i-do-des {
+        padding: 20px;
+    }
+
+    footer,
+    .about {
+        padding: 40px;
+        /* flex-direction: column; */
+        align-items: center;
+    }
+
+    .social-links {
+        text-align: center;
+    }
+}
